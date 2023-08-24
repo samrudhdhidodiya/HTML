@@ -1,0 +1,61 @@
+@media (max-width:576px){
+/* header */
+.header .right
+{
+    display: none;
+}
+/* .section1 
+ .section1  
+{
+    display: flex;
+    justify-content: space-around;
+    flex-direction:column;
+    width: 100%;
+    margin: 0%;
+}
+.section1 .left
+{
+    width: 100%;
+}
+.section1 .left h6 
+{
+    margin-top:20px;
+    font-size: 18px;
+}
+.section1 .left h1 
+{
+    font-size:29px;
+}
+.section1 .left p 
+{
+    margin-top: 5px;
+    margin-left: 20px;
+    font-size: 10px;
+}
+.section1 .left .btn{
+    margin-bottom: 20px;
+ }
+ .section1 .right{
+     width: 100%;
+ }
+ .section1 .right .img{
+     width: 100%;
+ }
+ 
+ .section1 .right img{
+     height: 100px;
+     background-position: top;
+     width: 100%;
+ }*/
+
+/* section2 
+ .section2 .icon
+{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 40px 30px;
+
+    margin: 100px 30px;   
+    padding: 10px 50px;
+}*/
+}

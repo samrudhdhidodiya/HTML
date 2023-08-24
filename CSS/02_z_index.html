@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z_index</title>
+    <link rel="icon" href="https://images.pexels.com/photos/1266302/pexels-photo-1266302.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+    <style>
+        img
+        {
+            height: 200px;
+            width:  200px;
+        }
+
+        div
+        {
+            position: relative;
+        }
+
+        .img_1
+        {
+            position: absolute;
+            left: 30px;
+            top: 30px;
+            z-index: 2;
+        }
+        .img_2
+        {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            z-index: 1;
+        }
+        .img_3
+        {
+            position: absolute;
+            left: 60px;
+            top: 60px;
+            z-index: 3;
+        }
+    </style>
+     
+</head>
+<body>
+    <div>
+        <img src="img1/snowfall_1.cms" class="img_1" alt="">
+        <img src="img1/natural_2.jpg" class="img_2" alt="">
+        <img src="img1/nature _pic.jpeg" class="img_3" alt="">
+    
+    </div>
+    
+    
+</body>
+</html>
