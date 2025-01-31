@@ -1,0 +1,599 @@
+(Q.1)Define HTML. What is the purpose of HTML in web development?
+=>HTML (HyperText Markup Language) is the standard markup language used for creating and structuring content on the web. It defines the structure of a webpage by using a system of tags and elements to organize text, images, videos, links, and other multimedia.
+    Purpose of HTML in Web Development
+    The primary purposes of HTML in web development include:
+
+    Structuring Content: HTML organizes and structures the content on a webpage. It uses elements like headings (<h1> to <h6>), paragraphs (<p>), and lists (<ul>, <ol>) to define how information is presented.
+
+    Defining Semantics: HTML provides semantic tags (ex <header>, <footer>, <article>, <nav>) that describe the purpose of the content, making it easier for browsers and search engines to understand and index.
+
+    Embedding Multimedia: HTML allows embedding of images (<img>), videos (<video>), and audio files (<audio>) to enhance the visual and auditory experience of a website.
+
+    Hyperlinking: HTML supports hyperlinks (<a>), enabling users to navigate between web pages and access additional resources.
+
+    Foundation for Styling and Interactivity:
+
+    HTML provides the structure upon which CSS (Cascading Style Sheets) adds styling and JavaScript enables interactivity.
+    For example, a <div> element can be styled with CSS and dynamically updated using JavaScript.
+    Cross Browser Support: HTML is universally supported by all web browsers, making it the backbone of web development.
+
+    Accessibility: Using proper HTML tags improves web accessibility by helping assistive technologies (like screen readers) interpret and convey content to users with disabilities.
+
+(Q.2) Explain the basic structure of an HTML document. Identify the mandatory tags and their purposes.
+    =>An HTML document follows a standard structure with essential tags that define its content and layout.
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Basic HTML Structure</title>
+    </head>
+    <body>
+        <h1>Welcome to My Website</h1>
+        <p>This is a simple HTML document structure.</p>
+    </body>
+    </html>
+
+    mandatory tags:=
+    (1).<!DOCTYPE html> (Document Type Declaration)
+        Declares the document as an HTML5 document.
+    (2).<html> (Root Element)
+        Encloses the entire HTML document.
+        All other elements must be inside this tag.
+    (3).<head> (Head Section)
+        Contains metadata (information about the document, not displayed on the page).
+        Includes the document title, character encoding, viewport settings, and linked resources (CSS, JavaScript).
+    (4).<meta charset="UTF-8">
+        Specifies character encoding, ensuring proper text rendering, including special characters.
+    (5).<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        Ensures responsiveness by adjusting the page layout for different screen sizes.
+    (6).<title> (Document Title)
+        Sets the title of the webpage, displayed on the browser tab.
+    (7).<body> (Body Section)
+        Contains all the visible content, such as text, images, links, and multimedia.
+    (8).Content Tags (Examples)
+        <h1> to <h6> Headings for structuring content.
+        <p> Paragraphs for text content.
+        <img> Displays images.
+        <a> Creates hyperlinks.
+        <div> and <span> Used for layout and styling.
+
+(Q.3) What is the difference between block-level elements and inline elements in HTML? Provide examples of each.
+=>(1).Block-Level Elements:=
+    A block-level element takes up the full width of its parent container by default.
+    It starts on a new line and pushes content below it.
+    Commonly used for structuring page content.
+Block level Element:-<div> (Generic container)
+        <p> (Paragraph)
+        <h1> to <h6> (Headings)
+        <ul> <ol> (Lists)
+        <table> (Tables)
+        <section>, <article>, <header>, <footer> (Semantic elements)
+example:=<div>, <p>, <h1> to <h6>, <ul></ul>
+
+(2).inline elements:=
+    An inline element only takes up as much width as necessary.
+    It does not start on a new line.
+    Typically used for styling parts of a sentence or small portions of content.
+inline element:-<span> (Generic inline container)
+    <a> (Hyperlink)
+    <strong> (Bold)
+    <em> (Italic)
+    <img> (Image)
+    <input> (Form input field)
+
+(Q.4)Discuss the role of semantic HTML. Why is it important for accessibility and SEO? Provide examples of semantic elements.
+=>Semantic HTML refers to using HTML elements that clearly describe their meaning in a human- and machine-readable way. Instead of using generic <div> and <span> tags, semantic elements provide structure and context to web content.
+    (1).Accessibility (Improved User Experience)
+    (2).SEO (Search Engine Optimization)
+    (3).Code Readability and Maintainability:
+        Makes the HTML easier to read, understand, and maintain for developers.
+        Reduces unnecessary <div> usage, leading to cleaner and more structured code.
+    Structural Elements:
+            <header> Defines the header section (often includes logos, menus).
+            <nav> Represents navigation links.
+            <section> Groups related content together.
+            <article>Represents an independent piece of content (e.g., blog post, news article).
+            <aside>Sidebar content related to the main content.
+            <footer>Contains copyright, contact info, or links.
+
+Lab Assignment 
+Task:  
+    Create a simple HTML webpage that includes: 
+        A header (<header>), footer (<footer>), main section (<main>), and aside section (<aside>). 
+        A paragraph with some basic text. 
+        A list (both ordered and unordered). 
+        A link that opens in a new tab. 
+=><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple HTML Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        header, footer {
+            background-color: #f4f4f4;
+            text-align: center;
+            padding: 1em;
+        }
+        main {
+            padding: 1em;
+        }
+        aside {
+            background-color: #f9f9f9;
+            padding: 1em;
+            margin: 1em 0;
+            border-left: 3px solid #ddd;
+        }
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Welcome to My Simple Webpage</h1>
+    </header>
+
+    <!-- Main Content Section -->
+    <main>
+        <p>This is a paragraph of text that provides some basic content for the webpage. HTML is great for structuring web pages!</p>
+
+        <!-- Ordered List -->
+        <h2>Ordered List</h2>
+        <ol>
+            <li>Html</li>
+            <li>Css</li>
+            <li>JavaScript</li>
+        </ol>
+
+        <!-- Unordered List -->
+        <h2>Unordered List</h2>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ul>
+
+        <!-- Link that opens in a new tab -->
+        <p>Check out more about <a href="https://www.w3schools.com" target="_blank">HTML tutorials</a>.</p>
+    </main>
+
+    <!-- Aside Section -->
+    <aside>
+        <h3>Did You Know?</h3>
+        <p>HTML stands for HyperText Markup Language, and it's the foundation of all websites!</p>
+    </aside>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 My Simple Webpage</p>
+    </footer>
+
+</body>
+</html>
+
+HTML Forms :
+
+(Q.1)What are HTML forms used for? Describe the purpose of the input, textarea, select, and button elements.
+=>HTML forms are used to collect user input and send it to a server for processing.
+<input>:
+    Used to collect various types of user input such as text, passwords, emails, numbers, and more.
+    Attributes like type="text", type="email", type="password", and type="checkbox" define the input behavior.
+<textarea>:
+    Provides a multi-line text input field.
+    Used for collecting long-form text, such as comments or messages.
+<select>:
+    Creates a dropdown list from which users can select one or more options.
+    It works with <option> elements to define the selectable choices.
+<button>:
+    such as submitting the form or running a JavaScript function.
+    Can be of different types like submit, reset, or button.
+
+(Q.2) Explain the difference between the GET and POST methods in form submission. When should each be used?
+=>The GET and POST methods are two common HTTP methods used in form submission.
+GET is used for retrieving data like searching, filtering, or paging, whereas POST is used for submitting forms, modifying data, or creating new resources. 
+
+(Q.3) What is the purpose of the label element in a form, and how does it improve accessibility?
+=>The <label> element in an HTML form is used to provide a textual description for form controls such as <input>, <textarea>, <select>, etc.
+    When linked correctly to an input field, clicking the label focuses or activates the input.
+    example:=<label for="email">Email Address:</label>
+    <input type="email" id="email" name="email">  
+
+Task:=
+    Create a contact form with the following fields: 
+    Full name (text input) 
+    Email (email input) 
+    Phone number (tel input) 
+    Subject (dropdown menu) 
+    Message (textarea) 
+    Submit button
+
+=><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+</head>
+<body>
+        
+            <h1>contact-form</h1>
+            <form action="/Assigement_ex/ex2_contactform.html">
+        
+            
+             <label for="SName">Student Name:</label>
+            <input type="text" name="Full Name" id="" placeholder="Student Name"><br>
+            <label for="FName">Father's Name:</label>
+            <input type="text" name="Full Name" id="" placeholder="Father's Name"><br>
+            <label for="MName">Mother's Name:</label>
+            <input type="text" name="Full Name" id="" placeholder="Mother's Name"><br><br>
+            
+            <label for="Email">Email</label>
+            <input type="email" name="Email" id="" placeholder="Enter your Email"><br><br>
+    
+            <label for="Mobile Number">Mobile Number</label>
+            <input type="tel" name="" id=""><br><br>
+            
+            <label for="Subject">subject</label>
+            <select>
+                <option value="Subject">Html</option>
+                <option value="Subject">Css</option><br><br>
+                <option value="Subject">Javascript</option><br><br>
+                <option value="Subject">React.js</option><br><br>
+            </select><br><br>
+
+            <label for="Message">Message</label>
+            <textarea name="Message" id="" placeholder="Message"></textarea><br><br>
+            
+            <input type="Submit" value="Submit">
+            
+    
+        </form>
+    </div>
+    
+</body>
+</html>
+
+Additional Requirements:=
+(1).Use appropriate form validation using required, minlength, maxlength, and pattern. 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact-form</title>
+</head>
+<body>
+    <div class="container">
+        <h1>contact-form</h1>
+        <form action="/Assigement_ex/ex2_contactform.html">
+    
+        <label for="SName">Student Name:</label>
+        <input type="text" name="Full Name" id="" placeholder="Student Name" required minlength="3" maxlength="60"><br>
+        <label for="FName">Father's Name:</label>
+        <input type="text" name="Full Name" id="" placeholder="Father's Name" required minlength="3" maxlength="60"><br>
+        <label for="MName">Mother's Name:</label>
+        <input type="text" name="Full Name" id="" placeholder="Mother's Name" required minlength="3" maxlength="60"><br><br>
+        
+        <label for="Email">Email</label>
+        <input type="email" name="Email" id="" placeholder="Enter your Email" required><br><br>
+
+        <label for="Mobile Number">Mobile Number</label>
+        <input type="tel" name="phone" id="" placeholder="Enter Number" required pattern="[0-9]{10}"><br><br>
+        
+        <label for="Subject">subject</label>
+        <select>
+            <option value="Subject">Html</option>
+            <option value="Subject">Css</option><br><br>
+            <option value="Subject">Javascript</option><br><br>
+            <option value="Subject">React.js</option><br><br>
+        </select><br><br>
+
+        <label for="Message">Message</label>
+        <textarea name="Message" id="" placeholder="Message" required minlength="10" maxlength="500"></textarea><br><br>
+        
+        <input type="Submit" value="Submit">
+        
+
+    </form>
+</div>
+
+    
+</body>
+</html>
+
+(2).Link form labels with their corresponding inputs using the for attribute.
+
+
+HTML Tables :=
+(Q.1)Explain the structure of an HTML table and the purpose of each of the following elements: <table>, <tr>, <th>, <td>, and <thead>. 
+=>The <table> tag defines an HTML table.
+    An HTML table consists of one <table> element and one or more <tr>, <th>, and <td> elements.
+    <tr> (Table Row) defines a row in the table.
+    <th> (Table Header) defines a header cell in the table.
+    <td> (Table Data) defines a standard data cell in the table.
+    <thead> tag is used to group header content in an HTML table.
+example:=
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <table border="1">
+            <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>City</th>
+            </tr>
+            <tr>
+            <td>Samrudhdhi</td>
+            <td>24</td>
+            <td>Surat</td>
+            </tr>
+            <tr>
+            <td>Mital</td>
+            <td>30</td>
+            <td>Ahemdabad</td>
+            </tr>
+        </table>
+    </body>
+    </html>
+
+(Q.2): What is the difference between colspan and rowspan in tables? Provide examples. 
+=>colspan merges cells horizontally, while rowspan merges cells vertically. 
+    colspan: Merges multiple columns into a single cell.
+    colspan attribute allows a cell to span multiple columns.
+    rowspan: Merges multiple rows into a single cell.
+    rowspan attribute allows a cell to span multiple rows.
+    Example:=<table border="1px" style="width:50%">
+        <tr>
+          <th colspan="2">Name</th>
+          <th>Age</th>
+        </tr>
+        <tr>
+          <td>Smarudhi</td>
+          <td>Sakshi</td>
+          <td>24</td>
+        </tr>
+        <tr>
+          <td>Mital</td>
+          <td>Mayuri</td>
+          <td>57</td>
+        </tr>
+      </table>
+
+(Q.3) Why should tables be used sparingly for layout purposes? What is a better alternative?
+=> better alternatives include CSS Flexbox and CSS Grid.
+        CSS Flexbox:=Offers flexible ways to arrange elements within a container, allowing for responsive layouts and easy alignment. 
+        CSS Grid:=Provides a more structured grid system with rows and columns, giving greater control over complex layouts. 
+        CSS (Cascading Style Sheets) provides more efficient and flexible layout techniques:
+        CSS Flexbox One-Dimensional Layouts Great for aligning elements in a row or column.
+        CSS Grid Two-Dimensional Layouts Great for complex layouts with rows and columns.
+        
+Task:  
+    Create a product catalog table that includes the following columns: 
+    Product Name 
+    Product Image (use placeholder image URLs) 
+    Price 
+    Description 
+    Availability (in stock, out of stock)
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Product Catalog</h2>
+    <table border="1" >
+        <tr>
+            <th>Product Name</th>
+            <th>Product Image</th>
+            <th>Price</th>
+            <th>Description</th>
+            <th>Availability</th>
+        </tr>
+        <tr>
+            <td>Shampoo</td>
+            <td><img src="img/shampoo.jpg" width="35" height="50" alt="Shampoo"></td>
+            <td>199</td>
+            <td>This is best Shampoo.</td>
+            <td>In Stock</td>
+        </tr>
+        <tr>
+            <td>Conditioner</td>
+            <td><img src="img/conditioner.jpg" width="35" height="50" alt="conditioner"></td>
+            <td>200</td>
+            <td>This is best Conditioner.</td>
+            <td>Out of Stock</td>
+        </tr>
+        <tr>
+            <td>Hair Oil</td>
+            <td><img src="img/hairoil" width="35" height="50" alt="Hairoil"></td>
+            <td>300</td>
+            <td>This is best Hair oil.</td>
+            <td>Out of Stock</td>
+        </tr>
+        <tr>
+            <td>Serum</td>
+            <td><img src="img/serum.webp" width="35" height="50" alt="serum"></td>
+            <td>400</td>
+            <td>This is best serum</td>
+            <td>In Stock</td>
+        </tr>
+        
+    </table>
+</body>
+</html>
+
+Additional Requirements:=
+(1).Use thead for the table header.
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <table border="1px ">
+            <thead>
+                <tr>
+                    <th>Student Name</th>
+                    <th>Marks</th>
+                    <th>City</th>
+                    
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Anjali</td>
+                    <td>80</td>
+                    <td>Surat</td>
+                </tr>
+                <tr>
+                    <td>Vishakha</td>
+                    <td>85</td>
+                    <td>Rajkot</td>
+                </tr>
+                <tr>
+                    <td>Disha</td>
+                    <td>89</td>
+                    <td>Surendranagar</td>
+                </tr>
+                <tr>
+                    <td>Bhavya</td>
+                    <td>90</td>
+                    <td>Ahemdabad</td>
+                </tr>
+                <tr>
+                    <td>Mital</td>
+                    <td>80</td>
+                    <td>Surat</td>
+                </tr>
+            </tbody>
+        </table>
+        </body>
+    </html>
+(2).Add a border and some basic styling using inline CSS.
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        
+        <table border="5px" style="width: 50%;">
+            <thead style="background-color:gray;" >
+                <tr>
+                    <th>Student Name</th>
+                    <th>Marks</th>
+                    <th>City</th>
+                    
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Anjali</td>
+                    <td>80</td>
+                    <td>Surat</td>
+                </tr>
+                <tr>
+                    <td>Vishakha</td>
+                    <td>85</td>
+                    <td>Rajkot</td>
+                </tr>
+                <tr>
+                    <td>Disha</td>
+                    <td>89</td>
+                    <td>Surendranagar</td>
+                </tr>
+                <tr>
+                    <td>Bhavya</td>
+                    <td>90</td>
+                    <td>Ahemdabad</td>
+                </tr>
+                <tr>
+                    <td>Mital</td>
+                    <td>80</td>
+                    <td>Surat</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+    </html>
+
+(3).Use colspan or rowspan to merge cells where applicable.
+=>  <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <h2><caption>Time Table</caption></h2>
+    <table border="1">
+        <tr>
+            <th colspan="6">Time Table</th> 
+        </tr>
+        <tr> 
+            <th rowspan="6">Hours</th>
+            <th>Mon</th>
+            <th>Tue</th>
+            <th>Wed</th>
+            <th>Thu</th>
+            <th>Fri</th>
+        </tr>
+        <tr>
+            <td>Science</td>
+            <td>Maths</td>
+            <td>Science</td>
+            <td>Maths</td>
+            <td>Arts</td>
+        </tr>
+        <tr>
+            <td>Science</td>
+            <td>Maths</td>
+            <td>Science</td>
+            <td>Maths</td>
+            <td>Arts</td>
+        </tr>
+        <tr>
+            <td colspan="5" style="text-align: center;">LUNCH</td>
+        </tr>
+        <tr>
+            <td>Science</td>
+            <td>Maths</td>
+            <td>Science</td>
+            <td>Maths</td>
+            <td rowspan="2">Project</td>
+        </tr>
+        <tr>
+            <td>Science</td>
+            <td>Maths</td>
+            <td>Science</td>
+            <td>Maths</td>
+        </tr>
+    </table>
+    </body>
+    </html>
